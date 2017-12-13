@@ -1,0 +1,21 @@
+{
+  "name": "manuales",
+  "version": "1.0.0",
+  "description": "This is a manual application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron main.js"
+  },
+  "author": "Diego Lopez",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "1.7.9"
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0-alpha.6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/dahsser/Manuales.git"
+  }
+}
