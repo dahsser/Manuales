@@ -2,16 +2,56 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Hello World!</title>
+    <title>Gestión de Manuales</title>
+    <link rel="stylesheet" href="./css/style.css" media="screen" title="no title">
   </head>
-  <style media="screen">
-    @import "./node_modules/bootstrap/dist/css/bootstrap.css";
-  </style>
   <body>
-    <h1>Hello World!</h1>
-    We are using node <script>document.write(process.versions.node)</script>,
-    Chrome <script>document.write(process.versions.chrome)</script>,
-    and Electron <script>document.write(process.versions.electron)</script>.
+    <div class="container" id="menu">
+      <div class="mx-auto p-3 mb-2 bg-primary text-white" id="titulo">
+        <center><h1>Gestión de manuales</h1></center>
+      </div>
+      <div class="container" id="opciones">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="about-tab" data-toggle="tab"
+            href="#about" role="tab" aria-controls="about" aria-selected="true">
+              Sobre la aplicación
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="profile-tab" data-toggle="tab"
+            href="#profile" role="tab" aria-controls="profile" aria-selected="false">
+              Cotización
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="contact-tab" data-toggle="tab"
+            href="#contact" role="tab" aria-controls="contact" aria-selected="false">
+              Creación de Manuales
+            </a>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="about" role="tabpanel" aria-labelledby="about-tab">
+            Version de la aplicación: 1.0 <br>
+            Autor: Diego Lopez <br>
+            Celular: +51 987314486 <br>
+          </div>
+          <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+
+          </div>
+          <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
     <script src="./js/tether.min.js">
     </script>
     <script>
